@@ -1,0 +1,13 @@
+{
+  "name": "silent-a45s-commerce",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/server.mjs",
+    "start": "node server/server.mjs"
+  },
+  "optionalDependencies": {
+    "pg": "^8.13.1"
+  }
+}

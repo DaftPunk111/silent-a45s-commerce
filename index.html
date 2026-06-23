@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silent's - Home</title>
+    <meta name="description" content="Silent's first page based on the Figma reference." />
+    <link rel="stylesheet" href="styles.css?v=20260609-5" />
+  </head>
+  <body class="home-mode">
+    <main class="page-shell" aria-label="Silent's first page">
+      <section class="figma-frame" aria-label="1界面">
+        <header class="topbar">
+          <nav class="icon-nav" aria-label="功能导航">
+            <button class="icon-link menu-button" type="button" aria-label="Open menu" data-open-left>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+            </button>
+            <button class="icon-link" type="button" aria-label="Account" data-open-right>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" /></svg>
+            </button>
+            <a class="icon-link" href="#search" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3M18 10.5a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></svg>
+            </a>
+            <button class="icon-link cart-trigger" type="button" aria-label="Cart" data-open-cart>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.7 9.2H7.1L5.4 3H2m7 19h.01M18 22h.01" /></svg>
+              <span class="cart-count" data-cart-count hidden>0</span>
+            </button>
+          </nav>
+
+          <div class="brand-lockup">
+            <button type="button" aria-label="Return to homepage" data-home>
+              <img src="figma-reference/1 小logo.png" alt="Silent's" />
+            </button>
+            <span aria-hidden="true"></span>
+          </div>
+
+          <nav class="text-nav" aria-label="主导航">
+            <a href="#story" data-left-link="story">OUR STORY</a>
+            <a href="#inclusion" data-left-link="inclusion">INCLUSION</a>
+            <a href="#join">JOIN US</a>
+            <a href="#contact">CONTACT</a>
+          </nav>
+        </header>
+
+        <button class="page-back" type="button" aria-label="Return to previous page" data-page-back hidden>
+          <svg viewBox="0 0 48 24" aria-hidden="true">
+            <path d="M12 3 3 12l9 9M4 12h40" />
+          </svg>
+        </button>
+
+        <div class="home-view view-panel" data-view="home">
+          <section class="home-hero" aria-label="Silent's hero">
+            <div class="carousel-art" aria-live="polite">
+              <img
+                src="web-assets/slide-performance.svg"
+                alt="Mercedes front view, Focus on Performance"
+                data-slide-art="2"
+              />
+              <img
+                src="web-assets/slide-process.svg"
+                alt="Mercedes interior, Extreme Process"
+                data-slide-art="3"
+              />
+              <img
+                src="web-assets/slide-inspiration.svg"
+                alt="Oska showroom, Source of Inspiration"
+                data-slide-art="1"
+              />
+            </div>
+
+            <div class="hero-logo" data-slide-stage>
+              <img src="figma-reference/1 大logo.png" alt="Silent" />
+            </div>
+
+            <div class="slide-copy" data-slide-copy>
+              <a href="#discover" data-discover>DISCOVER NOW</a>
+              <p data-slide-caption></p>
+            </div>
+
+            <div class="slider-dots" aria-label="Slider position" data-slider-controls>
+              <button class="slide-control active" type="button" aria-label="Slide 1" data-slide="0"></button>
+              <button class="slide-control" type="button" aria-label="Slide 2" data-slide="1"></button>
+              <button class="slide-control" type="button" aria-label="Slide 3" data-slide="2"></button>
+              <button class="slide-control" type="button" aria-label="Slide 4" data-slide="3"></button>
+            </div>
+          </section>
+
+          <section class="home-scroll-content" aria-label="Homepage details">
+            <div class="home-reference-panel">
+              <img src="figma-reference/首页下滑页2参考.svg" alt="Homepage detail section 2" />
+            </div>
+            <div class="home-reference-panel">
+              <img src="figma-reference/首页下滑页3参考.svg" alt="Homepage detail section 3" />
+            </div>
+            <div class="home-reference-panel">
+              <img src="figma-reference/首页下滑页4参考.svg" alt="Homepage detail section 4" />
+            </div>
+            <div class="home-reference-panel">
+              <img src="figma-reference/首页下滑页5参考.svg" alt="Homepage detail section 5" />
+            </div>
+          </section>
+        </div>
+
+        <section class="studio-detail-view view-panel" data-view="studio" hidden>
+          <div class="studio-detail-media">
+            <img src="web-assets/slide-inspiration.svg" alt="Silent Studio interior" />
+          </div>
+          <div class="studio-detail-copy">
+            <div>
+              <h1>SOURCE OF INSPIRATION.</h1>
+              <p>SILENT STUDIO.</p>
+            </div>
+            <button type="button" data-read-more>Read More.</button>
+          </div>
+        </section>
+
+        <section class="performance-catalog view-panel" data-view="catalog" hidden>
+          <div class="product-track" data-product-track>
+            <article class="product-choice">
+              <h1>GT3 Specification Hood</h1>
+              <img src="web-assets/products/performance-1-1.png" alt="GT3 Specification Hood" />
+              <button type="button" data-order-gt3>ORDER HERE</button>
+            </article>
+            <article class="product-choice">
+              <h1>Racing Rear Wing</h1>
+              <img src="web-assets/rear-car.jpg" alt="Racing Rear Wing" />
+              <button type="button">ORDER HERE</button>
+            </article>
+            <article class="product-choice">
+              <h1>Front Shovel</h1>
+              <img src="web-assets/products/performance-1-1.png" alt="Front Shovel" />
+              <button type="button">ORDER HERE</button>
+            </article>
+          </div>
+          <button class="catalog-arrow previous" type="button" aria-label="Previous product" data-product-previous>
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button class="catalog-arrow next" type="button" aria-label="Next product" data-product-next>
+            <span aria-hidden="true">›</span>
+          </button>
+          <div class="catalog-position" aria-label="Product position">
+            <button class="active" type="button" aria-label="GT3 Specification Hood" data-product-index="0"></button>
+            <button type="button" aria-label="Racing Rear Wing" data-product-index="1"></button>
+            <button type="button" aria-label="Front Shovel" data-product-index="2"></button>
+          </div>
+        </section>
+
+        <section class="performance-catalog extreme-catalog view-panel" data-view="extreme-catalog" hidden>
+          <div class="product-track" data-extreme-track>
+            <article class="product-choice extreme-pair">
+              <section>
+                <h1>Dashboard Trim Panel</h1>
+                <img src="web-assets/products/extreme-catalog-1-1.png" alt="Dashboard Trim Panel" />
+                <button type="button" data-extreme-order="dashboard">ORDER HERE</button>
+              </section>
+              <section>
+                <h1>Central Control Storage Compartment Trim Panel</h1>
+                <img src="web-assets/products/extreme-catalog-1-2.png" alt="Central Control Storage Compartment Trim Panel" />
+                <button type="button" data-extreme-order="storage">ORDER HERE</button>
+              </section>
+            </article>
+            <article class="product-choice extreme-pair">
+              <section>
+                <h1>Outlet Decorative Panel</h1>
+                <img src="web-assets/products/extreme-catalog-2-1.png" alt="Outlet Decorative Panel" />
+                <button type="button" data-extreme-order="outlet">ORDER HERE</button>
+              </section>
+              <section>
+                <h1>Wiper Removal Kit</h1>
+                <img src="web-assets/products/extreme-catalog-2-2.png" alt="Wiper Removal Kit" />
+                <button type="button" data-extreme-order="wiper">ORDER HERE</button>
+              </section>
+            </article>
+          </div>
+          <button class="catalog-arrow previous" type="button" aria-label="Previous products" data-extreme-previous>
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button class="catalog-arrow next" type="button" aria-label="Next products" data-extreme-next>
+            <span aria-hidden="true">›</span>
+          </button>
+          <div class="catalog-position" aria-label="Extreme Process product position">
+            <button class="active" type="button" aria-label="Dashboard and storage trim panels" data-extreme-index="0"></button>
+            <button type="button" aria-label="Outlet panel and wiper removal kit" data-extreme-index="1"></button>
+            <button type="button" aria-label="Outlet Decorative Panel" data-extreme-index="2"></button>
+            <button type="button" aria-label="Wiper Removal Kit" data-extreme-index="3"></button>
+          </div>
+        </section>
+
+        <div class="product-detail-view view-panel" data-view="product" hidden>
+          <section class="product-summary">
+            <div class="product-gallery">
+              <div class="product-main-image">
+                <img src="web-assets/products/hood-1-5.png" alt="GT3 Specification Hood" data-product-main />
+              </div>
+              <div class="product-thumbnails">
+                <button class="active" type="button" data-gallery-image="web-assets/products/hood-1-1.png">
+                  <img src="web-assets/products/hood-1-1.png" alt="Carbon fiber side vent detail" />
+                </button>
+                <button type="button" data-gallery-image="web-assets/products/hood-1-2.png">
+                  <img src="web-assets/products/hood-1-2.png" alt="Carbon fiber center vent detail" />
+                </button>
+                <button type="button" data-gallery-image="web-assets/products/hood-1-3.png">
+                  <img src="web-assets/products/hood-1-3.png" alt="GT3 hood underside" />
+                </button>
+              </div>
+            </div>
+
+            <div class="product-purchase">
+              <h1>GT3 Specification Hood</h1>
+              <p class="product-price">$1,500,00</p>
+              <label class="quantity-field">
+                <span>QUANTITY</span>
+                <input type="number" min="1" step="1" value="1" inputmode="numeric" data-quantity />
+              </label>
+              <div class="purchase-actions">
+                <button type="button" data-add-cart>ADD TO CART</button>
+                <button type="button" data-add-wishlist>ADD TO WISH LIST</button>
+              </div>
+              <p class="product-feedback" role="status" aria-live="polite" data-product-feedback></p>
+              <div class="share-links" aria-label="Share product">
+                <button type="button" aria-label="Share on Facebook">f</button>
+                <button type="button" aria-label="Share by email">✉</button>
+                <button type="button" aria-label="Print product">▣</button>
+                <button type="button" aria-label="Share on X">♥</button>
+                <button type="button" aria-label="Share on LinkedIn">in</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="product-description">
+            <h2>DESCRIPTION</h2>
+            <div class="description-copy">
+              <p>Rev up your AMG GTR Pro with our GT3 - spec carbon fiber hood!</p>
+              <p>• Superior Cooling: Engineered for optimal airflow, it efficiently dissipates heat, ensuring peak engine performance even under extreme conditions.</p>
+              <p>• Exquisite Craftsmanship: Meticulously crafted, every detail reflects precision and quality, seamlessly integrating with your vehicle's design.</p>
+              <p>• Lightweight Design: Significantly reduces weight, enhancing acceleration and handling for a more exhilarating driving experience.</p>
+              <p>Upgrade your ride today!</p>
+            </div>
+            <div class="description-images first-set">
+              <img src="web-assets/products/hood-2-3.png" alt="GT3 hood underside overview" />
+              <div>
+                <img src="web-assets/products/hood-2-1.jpg" alt="GT3 hood duct detail" />
+                <img src="web-assets/products/hood-2-2.jpg" alt="GT3 hood carbon detail" />
+              </div>
+            </div>
+          </section>
+
+          <section class="product-detail-gallery">
+            <img src="web-assets/products/hood-3-1.jpg" alt="GT3 hood mesh detail" />
+            <div>
+              <img src="web-assets/products/hood-3-2.jpg" alt="GT3 hood mounting detail" />
+              <img src="web-assets/products/hood-3-3.jpg" alt="GT3 hood carbon mounting detail" />
+            </div>
+          </section>
+
+          <footer class="product-footer">
+            <div class="footer-brand">
+              <img src="figma-reference/1 小logo.png" alt="Silent's" />
+              <p>We craft exclusive, high-performance auto aesthetics by designing aerodynamic kits with a stealthy edge, making every ride a statement of speed and style.</p>
+            </div>
+            <div>
+              <h3>DISCOVER</h3>
+              <p>Aerokit Studio</p><p>Style Garage</p><p>Rides4Boost</p><p>Our Story</p><p>Join the Crew</p>
+            </div>
+            <div>
+              <h3>GET IN TOUCH</h3>
+              <p>Locate Installer</p><p>Reach Out</p><p>Opt - Out &amp; Inquiry</p>
+            </div>
+            <div>
+              <h3>INFORMATION</h3>
+              <p>Brand Info</p><p>Service Rules</p><p>Data Guard</p><p>Preference Setup</p>
+            </div>
+            <div class="footer-newsletter">
+              <h3>NEWSLETTER</h3>
+              <p>Be part of the SILENT revolution and subscribe to get the latest on stealthy aerodynamic designs, exclusive drops, and speed-driven style now!</p>
+              <button type="button">SUBSCRIBE</button>
+            </div>
+          </footer>
+        </div>
+
+        <div class="product-detail-view extreme-detail-view view-panel" data-view="extreme-product" hidden>
+          <section class="product-summary">
+            <div class="product-gallery">
+              <div class="product-main-image">
+                <img src="web-assets/products/dashboard-1-1.png" alt="Dashboard Trim Panel" data-extreme-main />
+              </div>
+              <div class="product-thumbnails" data-extreme-thumbnails></div>
+            </div>
+            <div class="product-purchase">
+              <h1 data-extreme-title>Dashboard Trim Panel</h1>
+              <p class="product-price">$1,500,00</p>
+              <label class="quantity-field">
+                <span>QUANTITY</span>
+                <input type="number" min="1" step="1" value="1" inputmode="numeric" data-extreme-quantity />
+              </label>
+              <div class="purchase-actions">
+                <button type="button" data-extreme-add-cart>ADD TO CART</button>
+                <button type="button" data-extreme-add-wishlist>ADD TO WISH LIST</button>
+              </div>
+              <p class="product-feedback" role="status" aria-live="polite" data-extreme-feedback></p>
+              <div class="share-links" aria-label="Share product">
+                <button type="button" aria-label="Share on Facebook">f</button>
+                <button type="button" aria-label="Share by email">✉</button>
+                <button type="button" aria-label="Print product">▣</button>
+                <button type="button" aria-label="Share on X">♥</button>
+                <button type="button" aria-label="Share on LinkedIn">in</button>
+              </div>
+            </div>
+          </section>
+          <section class="product-description">
+            <h2>DESCRIPTION</h2>
+            <div class="description-copy" data-extreme-description></div>
+            <div class="extreme-installation" data-extreme-installation></div>
+          </section>
+          <footer class="product-footer">
+            <div class="footer-brand">
+              <img src="figma-reference/1 小logo.png" alt="Silent's" />
+              <p>We craft exclusive, high-performance auto aesthetics by designing aerodynamic kits with a stealthy edge, making every ride a statement of speed and style.</p>
+            </div>
+            <div>
+              <h3>DISCOVER</h3>
+              <p>Aerokit Studio</p><p>Style Garage</p><p>Rides4Boost</p><p>Our Story</p><p>Join the Crew</p>
+            </div>
+            <div>
+              <h3>GET IN TOUCH</h3>
+              <p>Locate Installer</p><p>Reach Out</p><p>Opt - Out &amp; Inquiry</p>
+            </div>
+            <div>
+              <h3>INFORMATION</h3>
+              <p>Brand Info</p><p>Service Rules</p><p>Data Guard</p><p>Preference Setup</p>
+            </div>
+            <div class="footer-newsletter">
+              <h3>NEWSLETTER</h3>
+              <p>Be part of the SILENT revolution and subscribe to get the latest on stealthy aerodynamic designs, exclusive drops, and speed-driven style now!</p>
+              <button type="button">SUBSCRIBE</button>
+            </div>
+          </footer>
+        </div>
+
+        <div class="brand-view view-panel" data-view="brand" hidden>
+          <section class="brand-introduction">
+            <img class="brand-composition" src="web-assets/brand-composition.png" alt="Silent's logo composition" />
+            <div class="brand-descriptions">
+              <article>
+                <span aria-hidden="true"></span>
+                <p>
+                  "Silent" literally means "quiet and silent", but in the context of car
+                  modification, it can be understood as a low-key coolness - although the
+                  exterior kit is installed "silently", it can quietly enhance the vehicle's
+                  performance and create an eye-catching appearance while driving through
+                  aerodynamic design (such as the carbon fiber rear wing and front bumper).
+                  Achieve the modification effect of "silence speaks louder than words".
+                </p>
+              </article>
+              <article>
+                <span aria-hidden="true"></span>
+                <p>
+                  The ghost symbolizes the brand's pursuit of a unique and mysterious
+                  modification style, representing its carbon fiber aerodynamic kit, which
+                  can endow vehicles with "supernatural" charm like a ghost, breaking through
+                  the limitations of ordinary appearances and creating a personalized and
+                  high-performance look. It also implies that the brand is like a ghost in
+                  the modification field, "coming and going without a trace (quick response,
+                  precise customization)" Realize the unique modification vision for car owners.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="history-section" id="history">
+            <div class="history-heading">
+              <h2>HISTORY</h2>
+              <div class="history-rule"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div class="drawer-backdrop" data-backdrop></div>
+
+    <aside class="drawer left-drawer" aria-hidden="true" aria-label="Main menu" data-left-drawer>
+      <button class="drawer-close" type="button" aria-label="Close menu" data-close-drawers>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" /></svg>
+      </button>
+
+      <div class="left-menu-layout">
+        <nav class="primary-menu" aria-label="Menu">
+          <p>MENU</p>
+          <button type="button" data-submenu="story">OUR STORY</button>
+          <button type="button" data-submenu="inclusion">INCLUSION</button>
+          <a href="#join">JOIN US</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+
+        <nav class="secondary-menu" aria-label="Inclusion categories" data-secondary-menu>
+          <div data-secondary-panel="story">
+            <a href="#history">History</a>
+            <a href="#philosophy">Philosophy</a>
+          </div>
+          <div data-secondary-panel="inclusion">
+            <a href="#detail-parts">Detail<br />Decoration<br />Parts</a>
+            <a href="#soft-parts">Soft<br />Decorative<br />Parts</a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+
+    <aside class="drawer right-drawer" aria-hidden="true" aria-label="My Silent account" data-right-drawer>
+      <button class="drawer-close right-close" type="button" aria-label="Close account" data-close-drawers>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" /></svg>
+      </button>
+      <div class="account-panel">
+        <h2>MY SILENT ACCOUNT</h2>
+        <div class="account-tabs" role="tablist" aria-label="Account mode">
+          <button class="active" type="button" data-account-mode="login">LOG IN</button>
+          <button type="button" data-account-mode="register">REGISTER</button>
+        </div>
+        <form data-account-form>
+          <h3 data-account-heading>LOG IN</h3>
+          <label>
+            <input
+              type="email"
+              autocomplete="email"
+              placeholder="Your email address"
+              aria-label="Your email address"
+              data-account-email
+              required
+            />
+          </label>
+          <label>
+            <input
+              type="password"
+              autocomplete="current-password"
+              placeholder="Your password"
+              aria-label="Your password"
+              data-account-password
+              minlength="6"
+              required
+            />
+          </label>
+          <label class="register-only" data-register-only hidden>
+            <input
+              type="password"
+              autocomplete="new-password"
+              placeholder="Confirm your password"
+              aria-label="Confirm your password"
+              data-account-confirm
+              minlength="6"
+            />
+          </label>
+          <button class="login-button" type="submit" data-account-submit>LOG IN</button>
+          <p class="account-status" role="status" aria-live="polite" data-account-status></p>
+        </form>
+        <div class="account-session" data-account-session hidden>
+          <h3>ACCOUNT</h3>
+          <p>Signed in as</p>
+          <strong data-account-current></strong>
+          <button class="login-button" type="button" data-account-logout>LOG OUT</button>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="drawer cart-drawer" aria-hidden="true" aria-label="Shopping cart" data-cart-drawer>
+      <button class="drawer-close right-close" type="button" aria-label="Close cart" data-close-drawers>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" /></svg>
+      </button>
+      <div class="cart-panel">
+        <h2>SHOPPING CART</h2>
+        <p class="empty-cart" data-empty-cart>Your cart is empty.</p>
+        <div class="cart-items" data-cart-items></div>
+        <div class="cart-summary" data-cart-summary hidden>
+          <p><span>Subtotal</span><strong data-cart-subtotal>$0.00</strong></p>
+          <p><span>International shipping</span><strong data-cart-shipping>$0.00</strong></p>
+          <p><span>Total</span><strong data-cart-total>$0.00</strong></p>
+          <button class="checkout-button" type="button" data-start-checkout>CHECKOUT</button>
+        </div>
+        <form class="checkout-panel" data-checkout-form hidden>
+          <h3>CHECKOUT</h3>
+          <label>
+            <span>Email</span>
+            <input type="email" autocomplete="email" placeholder="Your email address" data-checkout-email required />
+          </label>
+          <label>
+            <span>Shipping country / region</span>
+            <select data-checkout-country required>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="European Union">European Union</option>
+              <option value="Australia">Australia</option>
+              <option value="Japan">Japan</option>
+              <option value="China">China</option>
+            </select>
+          </label>
+          <label>
+            <span>Address</span>
+            <input type="text" autocomplete="shipping street-address" placeholder="Street address" data-checkout-address required />
+          </label>
+          <fieldset class="payment-options">
+            <legend>PAYMENT</legend>
+            <label><input type="radio" name="payment" value="Card" checked /> Credit card</label>
+            <label><input type="radio" name="payment" value="PayPal" /> PayPal</label>
+            <label><input type="radio" name="payment" value="Apple Pay" /> Apple Pay</label>
+            <label><input type="radio" name="payment" value="Google Pay" /> Google Pay</label>
+          </fieldset>
+          <div class="card-fields" data-card-fields>
+            <input type="text" inputmode="numeric" placeholder="Card number" aria-label="Card number" data-card-number />
+            <input type="text" inputmode="numeric" placeholder="MM / YY" aria-label="Card expiry" data-card-expiry />
+            <input type="text" inputmode="numeric" placeholder="CVC" aria-label="Card CVC" data-card-cvc />
+          </div>
+          <button class="checkout-button" type="submit">PLACE ORDER</button>
+          <p class="checkout-status" role="status" aria-live="polite" data-checkout-status></p>
+        </form>
+        <div class="order-confirmation" data-order-confirmation hidden>
+          <h3>ORDER RECEIVED</h3>
+          <p data-order-message></p>
+          <button class="checkout-button" type="button" data-new-order>CONTINUE SHOPPING</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="app.js?v=20260609-5"></script>
+  </body>
+</html>

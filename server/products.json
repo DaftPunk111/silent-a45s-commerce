@@ -1,0 +1,47 @@
+[
+  {
+    "id": "gt3",
+    "slug": "gt3-specification-hood",
+    "name": "GT3 Specification Hood",
+    "price": 1500,
+    "currency": "usd",
+    "image": "/web-assets/products/hood-1-5.png",
+    "category": "performance"
+  },
+  {
+    "id": "dashboard",
+    "slug": "dashboard-trim-panel",
+    "name": "Dashboard Trim Panel",
+    "price": 1500,
+    "currency": "usd",
+    "image": "/web-assets/products/dashboard-1-1.png",
+    "category": "extreme-process"
+  },
+  {
+    "id": "storage",
+    "slug": "central-control-storage-compartment-trim-panel",
+    "name": "Central Control Storage Compartment Trim Panel",
+    "price": 1500,
+    "currency": "usd",
+    "image": "/web-assets/products/storage-1-1.png",
+    "category": "extreme-process"
+  },
+  {
+    "id": "outlet",
+    "slug": "outlet-decorative-panel",
+    "name": "Outlet Decorative Panel",
+    "price": 1500,
+    "currency": "usd",
+    "image": "/web-assets/products/outlet-1-1.png",
+    "category": "extreme-process"
+  },
+  {
+    "id": "wiper",
+    "slug": "wiper-removal-kit",
+    "name": "Wiper Removal Kit",
+    "price": 1500,
+    "currency": "usd",
+    "image": "/web-assets/products/wiper-1-1.png",
+    "category": "extreme-process"
+  }
+]

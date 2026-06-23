@@ -1,0 +1,13 @@
+.env
+node_modules/
+server/data/store.json
+.DS_Store
+.codex-preview/
+
+# Raw source media and design files kept locally, not needed for deployment.
+/*.JPG
+/*.jpg
+/*.jpeg
+/*.png
+/*.pdf
+/*.indd
