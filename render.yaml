@@ -2,7 +2,7 @@ services:
   - type: web
     name: silent-a45s-commerce
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm install
     startCommand: npm start
     envVars:
